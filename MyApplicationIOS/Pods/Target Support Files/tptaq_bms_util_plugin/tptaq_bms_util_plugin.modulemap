@@ -1,0 +1,6 @@
+framework module tptaq_bms_util_plugin {
+  umbrella header "tptaq_bms_util_plugin-umbrella.h"
+
+  export *
+  module * { export * }
+}
