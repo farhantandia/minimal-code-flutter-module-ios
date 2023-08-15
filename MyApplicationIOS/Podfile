@@ -1,7 +1,7 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '13.0'
 
-flutter_application_path = '/Users/trendpower/Documents/GitHub/minimal-code-flutter-module-ios/tptaq_bms_util_module'
+flutter_application_path = '../tptaq_bms_util_module'
 load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
 target 'MyApplicationIOS' do
   # Comment the next line if you don't want to use dynamic frameworks
