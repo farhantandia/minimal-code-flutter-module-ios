@@ -14,8 +14,11 @@ public class TptaqBmsUtilPlugin: NSObject, FlutterPlugin {
         registrar.addMethodCallDelegate(self, channel: channel)
     }
     
+    
     public static func register(with registrar: FlutterPluginRegistrar) {
-        _ = TptaqBmsUtilPlugin(registrar: registrar)
+        let instance = TptaqBmsUtilPlugin(registrar: registrar)
+        let channel = FlutterMethodChannel(name: "tptaq_bms_util_channel", binaryMessenger: registrar.messenger())
+        registrar.addMethodCallDelegate(instance, channel: channel)
     }
     public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
         result("iOS " + UIDevice.current.systemVersion)

@@ -142,6 +142,7 @@ class TPBMSUtils {
     String password = '',
     String BMSconfigPath = '',
   }) async {
+    
     Map<String, String> bmsDiagnosisData = {};
     if (utilStatus == TPUtilStatus.Ready) {
       utilStatus = TPUtilStatus.OnProcess;

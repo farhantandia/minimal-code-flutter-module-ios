@@ -39,4 +39,4 @@ flutter:
   module:
     androidX: true
     androidPackage: com.tp.tptaq_bms_util_module
-    iosBundleIdentifier: com.tp.tptaqBmsUtilModule
+    iosBundleIdentifier: com.tp.tptaq_bms_util_module

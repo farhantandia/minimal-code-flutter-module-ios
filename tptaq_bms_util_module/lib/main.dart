@@ -1,16 +1,16 @@
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:tptaq_bms_util_plugin/tptaq_bms_util_plugin.dart';
 
-
-void main(){
-
+void main() {
+  DartPluginRegistrant.ensureInitialized();
   WidgetsFlutterBinding.ensureInitialized();
+  
   TptaqBmsUtilPlugin();
 // runApp(
-  
+
 //   const MyApp()
 //   );
-
 }
 
 class MyApp extends StatelessWidget {
