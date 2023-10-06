@@ -29,9 +29,9 @@ android {
         namespace 'com.tp.tptaq_bms_util_module'
     }
 
-    compileSdkVersion 33
+    compileSdkVersion 31
     defaultConfig {
-        minSdkVersion 19
+        minSdkVersion 16
     }
 }
 

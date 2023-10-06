@@ -7,8 +7,8 @@ class TptaqBmsUtilPlugin {
   Future<String?> getPlatformVersion() {
     return TptaqBmsUtilPluginPlatform.instance.getPlatformVersion();
   }
-  final MethodChannelTptaqBmsUtilPlugin methodChannelHelloTikiPlugin;
+  final MethodChannelTptaqBmsUtilPlugin methodChannelTptaqBmsUtilPlugin;
 
   TptaqBmsUtilPlugin()
-      : methodChannelHelloTikiPlugin = MethodChannelTptaqBmsUtilPlugin();
+      : methodChannelTptaqBmsUtilPlugin = MethodChannelTptaqBmsUtilPlugin();
 }

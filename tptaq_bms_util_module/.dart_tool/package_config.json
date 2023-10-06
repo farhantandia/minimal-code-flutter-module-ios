@@ -27,7 +27,7 @@
     },
     {
       "name": "collection",
-      "rootUri": "file:///Users/trendpower/.pub-cache/hosted/pub.dev/collection-1.18.0",
+      "rootUri": "file:///Users/trendpower/.pub-cache/hosted/pub.dev/collection-1.17.1",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
@@ -86,6 +86,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "js",
+      "rootUri": "file:///Users/trendpower/.pub-cache/hosted/pub.dev/js-0.6.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "lints",
       "rootUri": "file:///Users/trendpower/.pub-cache/hosted/pub.dev/lints-2.0.1",
       "packageUri": "lib/",
@@ -99,15 +105,15 @@
     },
     {
       "name": "matcher",
-      "rootUri": "file:///Users/trendpower/.pub-cache/hosted/pub.dev/matcher-0.12.16",
+      "rootUri": "file:///Users/trendpower/.pub-cache/hosted/pub.dev/matcher-0.12.15",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "material_color_utilities",
-      "rootUri": "file:///Users/trendpower/.pub-cache/hosted/pub.dev/material_color_utilities-0.5.0",
+      "rootUri": "file:///Users/trendpower/.pub-cache/hosted/pub.dev/material_color_utilities-0.2.0",
       "packageUri": "lib/",
-      "languageVersion": "2.17"
+      "languageVersion": "2.13"
     },
     {
       "name": "meta",
@@ -123,9 +129,9 @@
     },
     {
       "name": "path_provider",
-      "rootUri": "file:///Users/trendpower/.pub-cache/hosted/pub.dev/path_provider-2.1.0",
+      "rootUri": "file:///Users/trendpower/.pub-cache/hosted/pub.dev/path_provider-2.0.14",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "2.17"
     },
     {
       "name": "path_provider_android",
@@ -165,9 +171,9 @@
     },
     {
       "name": "plugin_platform_interface",
-      "rootUri": "file:///Users/trendpower/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.4",
+      "rootUri": "file:///Users/trendpower/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.5",
       "packageUri": "lib/",
-      "languageVersion": "2.17"
+      "languageVersion": "2.18"
     },
     {
       "name": "quick_blue",
@@ -195,21 +201,21 @@
     },
     {
       "name": "source_span",
-      "rootUri": "file:///Users/trendpower/.pub-cache/hosted/pub.dev/source_span-1.10.0",
+      "rootUri": "file:///Users/trendpower/.pub-cache/hosted/pub.dev/source_span-1.9.1",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "2.14"
     },
     {
       "name": "stack_trace",
-      "rootUri": "file:///Users/trendpower/.pub-cache/hosted/pub.dev/stack_trace-1.11.1",
+      "rootUri": "file:///Users/trendpower/.pub-cache/hosted/pub.dev/stack_trace-1.11.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "stream_channel",
-      "rootUri": "file:///Users/trendpower/.pub-cache/hosted/pub.dev/stream_channel-2.1.2",
+      "rootUri": "file:///Users/trendpower/.pub-cache/hosted/pub.dev/stream_channel-2.1.1",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "2.14"
     },
     {
       "name": "string_scanner",
@@ -225,9 +231,9 @@
     },
     {
       "name": "test_api",
-      "rootUri": "file:///Users/trendpower/.pub-cache/hosted/pub.dev/test_api-0.6.1",
+      "rootUri": "file:///Users/trendpower/.pub-cache/hosted/pub.dev/test_api-0.5.1",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "2.18"
     },
     {
       "name": "tptaq_bms_util_plugin",
@@ -248,12 +254,6 @@
       "languageVersion": "2.14"
     },
     {
-      "name": "web",
-      "rootUri": "file:///Users/trendpower/.pub-cache/hosted/pub.dev/web-0.1.4-beta",
-      "packageUri": "lib/",
-      "languageVersion": "3.1"
-    },
-    {
       "name": "win32",
       "rootUri": "file:///Users/trendpower/.pub-cache/hosted/pub.dev/win32-4.1.4",
       "packageUri": "lib/",
@@ -272,7 +272,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2023-08-16T01:18:21.760304Z",
+  "generated": "2023-08-21T05:24:59.051469Z",
   "generator": "pub",
-  "generatorVersion": "3.2.0-70.0.dev"
+  "generatorVersion": "3.0.6"
 }

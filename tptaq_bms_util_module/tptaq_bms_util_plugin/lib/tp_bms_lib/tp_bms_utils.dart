@@ -2,7 +2,8 @@ import 'dart:io';
 import 'dart:typed_data';
 
 import 'package:flutter/services.dart';
-import 'package:path_provider/path_provider.dart';
+import 'package:flutter/widgets.dart';
+// import 'package:path_provider/path_provider.dart';
 import 'package:quick_blue/quick_blue.dart';
 
 enum TPUtilStatus { Ready, OnProcess }
@@ -101,8 +102,8 @@ class TPBMSUtils {
   Future<String> writeFiletoRoot(String configFile, String filename) async {
     String? saveIniPath = "";
     try {
-      String dir = (await getApplicationDocumentsDirectory()).path; //app path
-      saveIniPath = '$dir/$filename';
+      // String dir = (await getApplicationDocumentsDirectory()).path; //app path
+      saveIniPath = filename;
       var bytes = await rootBundle.load(configFile);
 
       print(bytes.buffer.lengthInBytes);
@@ -119,14 +120,17 @@ class TPBMSUtils {
     return saveIniPath!;
   }
 
-  Future<bool> copyConfigFile() async {
+  Future<bool> copyConfigFile(String path) async {
     bool bResult = true;
     try {
-      PageInfo = await writeFiletoRoot(pathPageInfo, 'PageInfo.xls');
+      PageInfo = await writeFiletoRoot(pathPageInfo, path + '/PageInfo.xls');
+      print(PageInfo);
 
-      Ini = await writeFiletoRoot(pathBMS_ini, 'BMS_UI.ini');
+      Ini = await writeFiletoRoot(pathBMS_ini, path + '/BMS_UI.ini');
+      print(Ini);
 
-      DBC = await writeFiletoRoot(pathDBC, 'DBC.dbc');
+      DBC = await writeFiletoRoot(pathDBC, path + '/DBC.dbc');
+      print(DBC);
       bResult = true;
     } catch (e) {
       bResult = false;
@@ -142,7 +146,6 @@ class TPBMSUtils {
     String password = '',
     String BMSconfigPath = '',
   }) async {
-    
     Map<String, String> bmsDiagnosisData = {};
     if (utilStatus == TPUtilStatus.Ready) {
       utilStatus = TPUtilStatus.OnProcess;
@@ -154,8 +157,8 @@ class TPBMSUtils {
       print("$username $password $BMSconfigPath");
       String deviceID = "";
       print("test path provider");
-      await copyConfigFile();
-
+      await copyConfigFile(BMSconfigPath);
+      
       print("test quick blue");
       deviceID = await onStartConnect(deviceName);
 

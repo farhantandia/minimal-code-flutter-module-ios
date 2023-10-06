@@ -6,8 +6,6 @@ public class TptaqBmsUtilPlugin: NSObject, FlutterPlugin {
 //    var flutterViewController: FlutterViewController?
     var channel: FlutterMethodChannel
 
-
-
     public init(registrar: FlutterPluginRegistrar) {
         channel = FlutterMethodChannel(name: "tptaq_bms_util_channel", binaryMessenger: registrar.messenger())
         super.init()
@@ -16,13 +14,12 @@ public class TptaqBmsUtilPlugin: NSObject, FlutterPlugin {
     
     
     public static func register(with registrar: FlutterPluginRegistrar) {
-        let instance = TptaqBmsUtilPlugin(registrar: registrar)
-        let channel = FlutterMethodChannel(name: "tptaq_bms_util_channel", binaryMessenger: registrar.messenger())
-        registrar.addMethodCallDelegate(instance, channel: channel)
+        _ = TptaqBmsUtilPlugin(registrar: registrar)
     }
     public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
         result("iOS " + UIDevice.current.systemVersion)
     }
+    
     public func BMSDiagnosis(deviceName: String, deviceId:String = "",username: String = "", password: String = "", bmsConfigPath :String = "", completion: @escaping (Dictionary<String, Any>)->()){
         if bmsConfigPath.count > 0 {
             

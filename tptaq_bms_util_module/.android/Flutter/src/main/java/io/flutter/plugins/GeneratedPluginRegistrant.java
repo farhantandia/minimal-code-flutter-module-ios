@@ -17,17 +17,17 @@ public final class GeneratedPluginRegistrant {
   public static void registerWith(@NonNull FlutterEngine flutterEngine) {
     try {
       flutterEngine.getPlugins().add(new io.flutter.plugins.pathprovider.PathProviderPlugin());
-    } catch (Exception e) {
+    } catch(Exception e) {
       Log.e(TAG, "Error registering plugin path_provider_android, io.flutter.plugins.pathprovider.PathProviderPlugin", e);
     }
     try {
       flutterEngine.getPlugins().add(new com.example.quick_blue.QuickBluePlugin());
-    } catch (Exception e) {
+    } catch(Exception e) {
       Log.e(TAG, "Error registering plugin quick_blue, com.example.quick_blue.QuickBluePlugin", e);
     }
     try {
       flutterEngine.getPlugins().add(new com.example.tptaq_bms_util_plugin.TptaqBmsUtilPlugin());
-    } catch (Exception e) {
+    } catch(Exception e) {
       Log.e(TAG, "Error registering plugin tptaq_bms_util_plugin, com.example.tptaq_bms_util_plugin.TptaqBmsUtilPlugin", e);
     }
   }
